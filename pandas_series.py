@@ -4,7 +4,7 @@ grades = pd.Series([87,100,94])
 
 print(grades)
 
-same_grade = pd.Series998.6, range(3))
+same_grade = pd.Series(98.6, range(3))
 
 print(same_grade)
 
@@ -19,7 +19,7 @@ grades.std()
 
 print(grades.describe())
 #You can specify custom indices with the index keyword elements
-grades = pd.Series([87,100,94], indexes=['Wally',"Eva",'Same'])
+grades = pd.Series([87,100,94], index=['Wally',"Eva",'Same'])
 
 print(grades)
 
@@ -38,4 +38,19 @@ print(grades.Wally)
 print(grades.dtype)
 
 print(grades.values)
+
+hardware = pd.Series(['Hammer', 'Saw', 'Wrench'])
+
+''' 0 Hammer
+    1 Saw
+    2 Wrench
+    dtype: object'''
+
+answer = hardware.str.contains('a')
+
+print(answer)
+
+hardware_upper = hardware.str.upper()
+
+print(hardware_upper)
 
