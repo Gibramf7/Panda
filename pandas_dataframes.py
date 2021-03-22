@@ -46,7 +46,7 @@ print(b_grades)
 
 print(grades.at['Test1','Eva'])
 
-print(grades.iat[1,2])
+print(grades.at[1,2])
 
 grades.at['Test2','Eva'] = 100
 
