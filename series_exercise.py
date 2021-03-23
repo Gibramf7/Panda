@@ -13,6 +13,7 @@ print(Series2)
 'Create a Series with 20 elements that are all random numbers in the range 0 to 100. Use method describe to produce the Series’ basic descriptive statistics.'
 Series3 = pd.Series(np.random.randint(0,101,size=20))
 print(Series3)
+Series3.describe()
 
 "Create a Series called temperatures of the floating-point values 98.6, 98.9, 100.2 and 97.9. Using the index keyword argument, specify the custom indices 'Julie', 'Charlie', 'Sam' and 'Andrea'."
 temperatures = pd.Series([98.6,98.9,100.2,97.9],index = ['Julie','Charlie','Sam','Andrea'])
